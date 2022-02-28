@@ -1,0 +1,21 @@
+# scm_DA
+begin
+SYSTEM PROMPT" WELCOME TO THE JOB PORTAL"
+//caller supplies a username and password
+SYSTEM AUTHENTICATES
+Caller supplies requested information by the system
+SYSTEM REQUESTS HIGHEST QUALIFICATION FROM THE CALLER;
+caller supplies the requirement;
+SYSTEM REQUESTS YEAR OF GRADUATION;
+caller supplies;
+SYSTEM REQUESTS EXPEREIENCE IN THE FILED;
+caller supplies;
+//system check for ruless in the database 
+#IF HIGHEST QUALIFICATION == DATABASE AND GRADUATION == DATABASE;
+THEN;
+SYSTEM PROMPT" VACANY POSITION EXISTS FOR YOU:
+ELSE
+SYSTEM ADDS TO ENQUIRY
+ENDIF
+END DO
+END
